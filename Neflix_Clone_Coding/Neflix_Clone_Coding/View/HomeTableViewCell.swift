@@ -8,11 +8,13 @@ class HomeTableViewCell: UITableViewCell {
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 120, height: 180)
+        layout.itemSize = CGSize(width: 103, height: 161)
         layout.minimumLineSpacing = 10
+        
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.showsHorizontalScrollIndicator = false
+        cv.backgroundColor = .black
         return cv
     }()
     
